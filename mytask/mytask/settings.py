@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 EXTERNAL_APPS=[
     'taskapp',
     'rest_framework',
-      'corsheaders',
+    'corsheaders',
 ]
 INSTALLED_APPS+=EXTERNAL_APPS
 
@@ -53,8 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-       'corsheaders.middleware.CorsMiddleware',
-
+      'corsheaders.middleware.CorsMiddleware',
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 ROOT_URLCONF = 'mytask.urls'
@@ -138,7 +137,7 @@ DATABASES = {
         'USER': 'postgres',    
         'PASSWORD': '123',     
         'HOST': 'localhost',   
-        'PORT': '5432',        
+        'PORT': '5432',       
     }
 }
 
